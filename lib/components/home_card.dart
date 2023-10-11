@@ -1,24 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:plant_shop/data/plant_list.dart';
 
-class HomeCard extends StatefulWidget{
+class HomeCard extends StatelessWidget{
 
   final List<Plant> list;
   final int index;
   const HomeCard({super.key, required this.list, required this.index});
 
   @override
-  State<HomeCard> createState() => _HomeCard();
-
-}
-
-class _HomeCard extends State<HomeCard>{
-  bool _isSelected = false;
-  @override
   Widget build(BuildContext context){
-    final plantList = widget.list;
-    final index = widget.index;
-    _isSelected = plantList[index].cart;
+    final plantList = list;
     return Card(
               elevation: 0.0,
               shape: RoundedRectangleBorder(
@@ -41,11 +32,7 @@ class _HomeCard extends State<HomeCard>{
                     ),
                     Padding(
                       padding: const EdgeInsets.only(top: 10.0, left: 8.0, right: 8.0),
-                      child: Row(
-                      mainAxisAlignment: MainAxisAlignment.spaceAround,
-                      crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
-                        Column(
+                      child: Column(
                           crossAxisAlignment: CrossAxisAlignment.start,
                           children: [
                             Container(
@@ -71,42 +58,10 @@ class _HomeCard extends State<HomeCard>{
                             ),
                           ],
                         ),
-                        Container(
-                          padding: const EdgeInsets.only(top: 4.0, right: 4.0),
-                          height: 30.0,
-                          width: 36.0,
-                          child: FittedBox(
-                            fit: BoxFit.fitHeight,
-                            alignment: Alignment.center,
-                            child: ElevatedButton(
-                              onPressed: (){
-                                setState(() {
-                                  _isSelected = !_isSelected;
-                                });
-                                plantList[index].cart = _isSelected;
-                              },
-                              style: ButtonStyle(
-                                backgroundColor: MaterialStatePropertyAll(_isSelected ? Colors.green.shade100 : Theme.of(context).colorScheme.primary),
-                                shape: MaterialStatePropertyAll(
-                                  RoundedRectangleBorder(
-                                    borderRadius: BorderRadius.circular(50.0),
-                                  )
-                                ),
-                                alignment: Alignment.centerRight,
-                              ),
-                              child: Icon(
-                                _isSelected ? Icons.shopping_cart_rounded : Icons.shopping_cart_outlined,
-                                color: Theme.of(context).colorScheme.onPrimary,
-                                size: 30.0,
-                              ),
-                            ),
-                          )
-                        )
-                      ],
-                    ),
                     )
                   ],
                 ),
             );
   }
+
 }

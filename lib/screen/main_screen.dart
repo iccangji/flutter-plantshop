@@ -4,6 +4,8 @@ import 'package:flutter/material.dart';
 import 'package:plant_shop/components/grid_items.dart';
 import 'package:plant_shop/components/search_bar.dart';
 import 'package:plant_shop/data/plant_list.dart';
+import 'package:plant_shop/screen/cart_mobile_screen.dart';
+import 'package:plant_shop/screen/cart_web_screen.dart';
 
 class MainScreen extends StatefulWidget{
   const MainScreen({super.key});
@@ -15,6 +17,7 @@ class MainScreen extends StatefulWidget{
 
 class _MainScreen extends State<MainScreen>{
   var itemsList = plantList;
+  
 
   void updateList(String query){
     if(query != ""){
@@ -40,6 +43,7 @@ class _MainScreen extends State<MainScreen>{
         body: SafeArea(
           child: SingleChildScrollView(
             child: Column(
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 const SizedBox(
                   height: 24.0,
@@ -54,7 +58,16 @@ class _MainScreen extends State<MainScreen>{
                         style: TextStyle(fontWeight: FontWeight.bold, fontSize: 22.0),
                       ),
                       FloatingActionButton(
-                        onPressed: (){},
+                        onPressed: (){
+                          Navigator.push(context, MaterialPageRoute(builder: (context){
+                            return LayoutBuilder(
+                              builder:(context, constraints) {
+                                return constraints.maxWidth <= 800 ?
+                                  const CartMobileScreen() : const CartWebScreen();
+                              }
+                            );
+                          }));
+                        },
                         elevation: 1.0,
                         backgroundColor: Theme.of(context).colorScheme.primary,
                         child: Icon(Icons.shopping_cart_rounded, color: Theme.of(context).colorScheme.onPrimary,),
@@ -68,9 +81,18 @@ class _MainScreen extends State<MainScreen>{
                     searchCallback: updateList,
                   ),
                 ),
-                GridItems(
-                  list: itemsList,
-                ),
+                LayoutBuilder(
+                  builder:(context, constraints) {
+                    return constraints.maxWidth >= 768 ?
+                      GridItems(
+                      gridCount: 4,
+                      list: itemsList,
+                    ) : GridItems(
+                      gridCount: 2,
+                      list: itemsList, 
+                    );
+                  }
+                )
               ],
             ),
           )

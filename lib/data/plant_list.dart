@@ -26,9 +26,9 @@ var plantList = [
   Plant(
     name: 'Monstera',
     price : 600000, 
-    desc: 'Monstera alias janda bolong merupakan jenis tanaman hias tropis yang sering digunakan sebagai hiasan interior rumah bergaya Skandinavia atau minimalis. Keunikan tanaman ini adalah memiliki daun mengilap lebar berwarna hijau pekat berpola seperti bentuk hati', 
+    desc: 'Monstera is a type of tropical ornamental plant that is often used to decorate Scandinavian or minimalist style home interiors. The uniqueness of this plant is that it has wide, dark green glossy leaves with a heart-shaped pattern', 
     temp: '<40° C', 
-    water: '3 hari sekali', 
+    water: 'Once 3 days', 
     type: 'Indoor',
     imageUrl: [
       'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/8/bce7cd09-7c28-4d77-9a76-edac51a42bb9.jpg',
@@ -40,9 +40,9 @@ var plantList = [
   Plant(
     name: 'Dracaena Fragrans',
     price: 400000, 
-    desc: 'Dracaena adalah tanaman yang tumbuh tegak dengan bentuk batang bulat dan beruas-ruas. Daun dracaena berbentuk tunggal, tidak bertangkai, dan pelepah memeluk batang. Selain itu, daun dracaena bertepi rata, panjang daun cm, lebar daun 3-5 cm, pertulangan daun sejajar, permukaan daun licin.', 
+    desc: 'Dracaena is a plant that grows upright with a round, segmented stem. Dracaena leaves are single, have no stems, and the midrib hugs the stem. Apart from that, dracaena leaves have flat edges, leaf length is cm, leaf width is 3-5 cm, leaf bones are parallel, leaf surface is smooth.', 
     temp:'<40° C', 
-    water: '1 Minggu sekali', 
+    water: 'Once a week', 
     type:  'Indoor',
     imageUrl:   [
     'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/8/c5e17430-8d75-40d3-b46f-4d57a15c0547.jpg',
@@ -54,9 +54,9 @@ var plantList = [
   Plant(
     name: 'Sansivera',
     price: 500000, 
-    desc: 'Lidah mertua atau Sansevieria adalah marga tanaman hias yang cukup populer sebagai penghias bagian dalam rumah karena dapat tumbuh dengan kondisi sedikit air dan cahaya matahari. Sansevieria memiliki daun keras, sukulen, tegak, dengan ujung meruncing.', 
+    desc: 'Sansevieria is a genus of ornamental plants that are quite popular to decorate the inside of the house because they can grow with a little water and sunlight. Sansevieria has tough, succulent, erect leaves, with pointed tips.', 
     temp: '<30° C', 
-    water: '1 Minggu sekali', 
+    water: 'Once a week', 
     type:  'Indoor',
     imageUrl:  [
     'https://images.tokopedia.net/img/cache/900/VqbcmM/2022/10/27/3e9d109d-d712-4825-a152-44df6582b123.jpg',
@@ -66,11 +66,11 @@ var plantList = [
     cart: false
   ),
   Plant(
-    name: 'Kaktus Koboi',
+    name: 'Cowboy Cactus',
     price: 300000, 
-    desc: 'Kaktus koboi adalah sukulen yang terlihat seperti pohon kaktus besar. Tanaman ini memiliki batang yang ramping, hijau, dan cabang yang besar serta sejajar. Sama seperti jenis kaktus pada umumnya, kaktus koboi memiliki duri di sepanjang sisinya. Kaktus ini juga menghasilkan buah ungu kemerahan setelah matang.', 
+    desc: 'The cowboy cactus is a succulent that looks like a large cactus tree. This plant has a slender, green stem and large, parallel branches. Just like other types of cactus, the cowboy cactus has spines along its sides. This cactus also produces reddish purple fruit when ripe.', 
     temp:  '>20° C', 
-    water: '2 Minggu sekali', 
+    water: 'Once 2 weeks', 
     type:  'Indoor/Outdoor',
     imageUrl:  [
     'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/8/69357307-62e7-456e-b4df-327da93f5ac2.jpg',
@@ -80,11 +80,11 @@ var plantList = [
     cart: false
   ),
   Plant(
-    name: 'Palem Kuning',
+    name: 'Yellow Palm',
     price: 500000, 
-    desc: 'Palm Kuning atau Dypsis lutescens adalah tanaman hias popular yang biasa dijumpai di pekarangan. Tumbuhan ini berasal dari Madagaskar dan dapat tumbuh hingga 6 meter. Palem kuning memiliki batang berupa terna.', 
+    desc: 'Yellow Palm or Dypsis lutescens is a popular ornamental plant that is usually found in yards. This plant comes from Madagascar and can grow up to 6 meters. The yellow palm has a herb-shaped stem.', 
     temp: '<40° C', 
-    water : '3 Hari sekali', 
+    water : 'Once 3 days', 
     type: 'Indoor/Outdoor',
     imageUrl:  [
     'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/8/d89e80cf-709e-4421-b183-c92b2ebbf690.jpg',
@@ -96,9 +96,9 @@ var plantList = [
   Plant(
     name: 'Ficus Elastica',
     price: 400000, 
-    desc: 'Ficus elastica (moraceae) atau yang dikenal pohon karet Kebo merupakan tanaman hijau yang banyak tersebar dan memiliki tinggi 30 m. Daunnya memiliki panjang 7 sampai dengan 20 cm, dengan tepi halus dan ujung yang tumpul. Daunnya sepanjang 1 kaki dan tebal berwarna hijau tua.', 
+    desc: 'Ficus elastica (moraceae) is a green plant that is widely spread and has a height of 30 m. The leaves are 7 to 20 cm long, with smooth edges and a blunt tip. The leaves are 1 foot long and thick and dark green.', 
     temp:  '<30° C', 
-    water: '2 Hari sekali', 
+    water: 'Once 2 days', 
     type:  'Indoor',
     imageUrl:  [
     'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/33222cc7-a5b6-4366-8dc1-b9ffd090afc5.jpg',
@@ -110,9 +110,9 @@ var plantList = [
   Plant(
     name: 'Saribus',
     price: 275000, 
-    desc: 'Palem sadeng merupakan tanaman asli dari Asia Tenggara, yaitu Filipina, Malaysia (Sabah), Indonesia (Kalimantan, Sulawesi, Maluku, Jawa). Spesies ini, kini telah banyak dibudidayakan sebagai tanaman hias di seluruh dunia di negara tropis dan subtropis. rupakan tanaman lanskap yang sangat populer, karena memiliki bentuk daun dan buah hias yang menarik. Spesies ini juga Mesering diambil dari alam untuk penggunaan lokal sebagai sumber makanan, tanaman obat, kayu, dan sumber bahan  lainnya.',
+    desc: 'Saribus is a native plant from Southeast Asia, namely the Philippines, Malaysia (Sabah), Indonesia (Kalimantan, Sulawesi, Maluku, Java). This species has now been widely cultivated as an ornamental plant throughout the world in tropical and subtropical countries. is a very popular landscape plant, because it has attractively shaped leaves and ornamental fruit. These species are also often taken from nature for local use as a source of food, medicinal plants, wood, and other material sources.',
     temp: '<50° C', 
-    water: '2 Minggu sekali', 
+    water: 'Once 2 weeks', 
     type:  'Indoor',
     imageUrl:[
       'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/1f4d3e90-62c3-45df-aa88-f86bdb4ef4ab.jpg',
@@ -124,9 +124,9 @@ var plantList = [
   Plant(
     name: 'Phliodenron',
     price: 250000, 
-    desc: 'Philodendron adalah sejenis tumbuhan dari suku Araceae, yang mempunyai banyak spesies. Namanya berasal dari bahasa Yunani, yaitu dari kata philo ("cinta") dan dendron ("pohon"). Karena keindahan bentuk dan warna-warni daunnya, Philodendron banyak disukai sebagai tanaman penghias ruangan atau taman.',  
+    desc: 'Philodendron is a type of plant from the Araceae family, which has many species. The name comes from Greek, namely from the words philo ("love") and dendron ("tree"). Because of the beautiful shape and color of its leaves, Philodendron is widely liked as a room or garden decoration plant.',  
     temp: '<30° C', 
-    water: '1 Minggu sekali',
+    water: 'Once a week',
     type:  'Indoor',
     imageUrl: ['https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/13e4f995-080a-4e60-a96f-d3f45b86f4d5.jpg',
       'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/cfeb558f-b296-4822-b41b-03f044663656.jpg',
@@ -137,9 +137,9 @@ var plantList = [
   Plant(
     name: 'Agave',
     price: 500000, 
-    desc: 'Agave merupakan sebuah tanaman yang umumnya berbentuk duri. Bentuk daun dan corak istimewa menjadi daya tarik bagi para kolektor agave. Sebab, sosok agave umumnya hampir seragam: daun tersusun roset, bentuk oval dengan ujung melancip, dan warna hijau. Disebut begitu karena daun yang semula agak pipih berujung lancip berubah menjadi menggembung seperti kubus.',  
+    desc: 'Agave is a plant that generally has the shape of thorns. The leaf shape and special pattern are attractive to agave collectors. This is because the appearance of agave is generally almost uniform: the leaves are arranged in a rosette, oval in shape with a sharp tip, and green in color. It is called that because the leaves which were originally rather flat with sharp ends have become bulging like cubes.',  
     temp:  '<30° C', 
-    water:'2 Minggu sekali',
+    water:'Once 2 weeks',
     type:  'Indoor/Outdoor',
     imageUrl: [ 'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/c17220d1-9ff5-4506-8e44-72bf5a891491.jpg',
       'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/c17220d1-9ff5-4506-8e44-72bf5a891491.jpg',
@@ -150,9 +150,9 @@ var plantList = [
   Plant(
     name: 'Aglonema',
     price: 300000, 
-    desc: 'Aglonema adalah tanaman hias dari jenis talas-talasan yang berada di hutan hujan tropis. Nama “aglonema” diambil dari bahasa Yunani. Kata Aglo berarti terang dan Nema artinya benang. Di Indonesia, tanaman ini juga sering disebut sebagai tanaman sri rezeki. Tanaman ini memiliki akar serabut dengan batang tak berkambium. Bentuk daun dari sri rezeki menyirip dan tersusun atas pembuluh pengangkut yang acak.', 
+    desc: 'Aglonema is an ornamental plant from the taro type found in tropical rain forests. The name "aglonema" is taken from Greek. The word Aglo means light and Nema means thread. In Indonesia, this plant is also often referred to as the sustenance plant. This plant has fibrous roots with stems without cambium. The leaf shape of Sri Rezeki is pinnate and composed of random carrying vessels.', 
     temp:  '<40° C', 
-    water: '2 Minggu sekali', 
+    water: 'Once 2 weeks', 
     type:  'Indoor',
     imageUrl:[
       'https://images.tokopedia.net/img/cache/900/VqbcmM/2023/8/7/c45ab8ac-2063-4569-9df4-7ec83c83a3d1.jpg',

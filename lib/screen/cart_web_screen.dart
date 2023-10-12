@@ -55,13 +55,11 @@ class _CartWebScreen extends State<CartWebScreen>{
                                   child: Stack(
                                     alignment: AlignmentDirectional.topEnd,
                                     children: [
-                                      Expanded(
-                                        child: Image.network(
+                                      Image.network(
                                         width: 400,
                                         height: 200,
                                         cartList[index].imageUrl[0],
                                         fit: BoxFit.cover,
-                                      ),
                                       ),
                                       Container(
                                         padding: const EdgeInsets.only(top: 8, right: 8.0),

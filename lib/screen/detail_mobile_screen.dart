@@ -30,8 +30,7 @@ class _DetailMobileScreen extends State<DetailMobileScreen> {
           elevation: 1.0,
         ),
         body: SingleChildScrollView(
-            child: Expanded(
-          child: Container(
+            child: Container(
               padding:
                   const EdgeInsets.symmetric(horizontal: 16.0, vertical: 16.0),
               child: Column(
@@ -112,8 +111,7 @@ class _DetailMobileScreen extends State<DetailMobileScreen> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Expanded(
-                            child: Padding(
+                        Padding(
                           padding: const EdgeInsets.only(left: 16.0),
                           child: FilledButton(
                               style: ButtonStyle(
@@ -139,12 +137,12 @@ class _DetailMobileScreen extends State<DetailMobileScreen> {
                               child: Text(_isCartItem
                                   ? "Added to Cart"
                                   : "Add to Cart")),
-                        ))
+                        )
                       ],
                     ),
                   )
                 ],
               )),
-        )));
+        ));
   }
 }

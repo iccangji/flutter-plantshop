@@ -111,7 +111,8 @@ class _DetailMobileScreen extends State<DetailMobileScreen> {
                             style: const TextStyle(fontWeight: FontWeight.bold),
                           ),
                         ),
-                        Padding(
+                        Expanded(
+                            child: Padding(
                           padding: const EdgeInsets.only(left: 16.0),
                           child: FilledButton(
                               style: ButtonStyle(
@@ -137,7 +138,7 @@ class _DetailMobileScreen extends State<DetailMobileScreen> {
                               child: Text(_isCartItem
                                   ? "Added to Cart"
                                   : "Add to Cart")),
-                        )
+                        ))
                       ],
                     ),
                   )
